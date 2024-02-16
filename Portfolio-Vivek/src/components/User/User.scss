@@ -4,10 +4,34 @@
   flex-direction: column;
 }
 
+.user-heading{
+  width: 90%;
+  margin: auto;
+  padding: 20px ;
+  padding-bottom: 50px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px black;
+  font-family: "Times New Roman", Times, serif;
+}
+
 .app_User-container {
   width: 80%;
   margin-top: 3rem;
-    gap:  10px;
+  gap:  2rem;
   display: flex;
   flex-direction: row;
+  margin: auto;
+  
+
+  
+}
+
+
+
+
+.box{
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 15px;
+  width: 100%;
 }

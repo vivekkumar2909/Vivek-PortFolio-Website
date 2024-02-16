@@ -179,11 +179,15 @@
   color: white;
   // font-weight: 600;
   font-size: 20px;
-  background: rgb(0, 11, 36);
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px black;
+  font-family: "Times New Roman", Times, serif;
+  background: rgb(6, 69, 60);
   background: linear-gradient(
-    0deg,
-    rgba(0, 11, 36, 1) 0%,
-    rgba(6, 5, 25, 1) 0%,
-    rgba(0, 232, 255, 1) 100%
+    101deg,
+    rgba(6, 69, 60, 1) 0%,
+    rgba(2, 0, 36, 1) 92%,
+    rgba(0, 212, 255, 1) 100%,
+    rgba(8, 157, 226, 1) 100%
   );
 }

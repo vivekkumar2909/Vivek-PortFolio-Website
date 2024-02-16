@@ -45,7 +45,14 @@
     width: 90px;
     height: 90px;
     border-radius: 50%;
-    background-color: #fef4f5;
+    background: rgb(6, 69, 60);
+    background: linear-gradient(
+      101deg,
+      rgba(6, 69, 60, 1) 0%,
+      rgba(2, 0, 36, 1) 92%,
+      rgba(0, 212, 255, 1) 100%,
+      rgba(8, 157, 226, 1) 100%
+    );
 
     img {
       width: 50%;
