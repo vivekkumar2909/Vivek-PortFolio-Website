@@ -17,6 +17,11 @@ function User() {
 
         <div className='app_User-container'>
           <div className='box'>
+
+            <div className='User_heading'>
+              <div>LeetCode:</div>
+              <h2>Vivek_Kumar2909</h2>
+            </div>
             When you add an image to a page using the HTML  element, the image will maintain the size and aspect ratio of the image file, or that of any HTML width or height attributes. Sometimes you would like the image to completely fill the box that you have placed it in. In that case you first need to decide what happens if the image is the wrong aspect ratio for the container.
 
             The image should completely fill the box, retaining aspect ratio, and cropping any excess on the side that is too big to fit.
@@ -25,6 +30,10 @@ function User() {
             The object-fit property makes each of these approaches possible. In the example below you can see how different values of object-fit work when using the same image. Select the approach that works best for your design.
           </div>
           <div className='box'>
+            <div className='User_heading'>
+              <div>LeetCode:</div>
+              <h2>Vivek_Kumar2909</h2>
+            </div>
             When you add an image to a page using the HTML  element, the image will maintain the size and aspect ratio of the image file, or that of any HTML width or height attributes. Sometimes you would like the image to completely fill the box that you have placed it in. In that case you first need to decide what happens if the image is the wrong aspect ratio for the container.
 
             The image should completely fill the box, retaining aspect ratio, and cropping any excess on the side that is too big to fit.

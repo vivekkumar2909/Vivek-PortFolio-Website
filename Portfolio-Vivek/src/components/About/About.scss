@@ -10,14 +10,12 @@
   align-items: flex-start;
   flex-wrap: wrap;
   margin-top: 2rem;
-  height: 300px;
   gap: 2rem;
 }
 
 .app__profile-item {
-  width: 210px;
+  width: 170px;
   display: flex;
-  
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
@@ -50,14 +48,17 @@
   flex-wrap: wrap;
   flex-direction: column;
   margin-left: 80px;
-  // width: 50%;
 
   h1 {
     font-size: 3rem;
     font-weight: bold;
     color: var(--black-color);
-    // margin-left: 10px;
     text-transform: capitalize;
+
+    @media screen and (max-width: 500px) {
+      font-size: 2rem;
+    }
+
   }
 
   .Subheading {
@@ -72,12 +73,19 @@
   p {
     padding-right: 200px;
     padding-left: 15px;
-    // background-color: black;
     @media screen and (max-width: 1000px) {
       padding-right: 60px;
+    }
+    @media screen and (max-width: 500px) {
+      padding-right: 15px;
     }
     @media screen and (min-width: 1300px) {
       padding-right: 350px;
     }
+  }
+
+
+  @media screen and (max-width: 500px) {
+    margin-left: 10px;
   }
 }

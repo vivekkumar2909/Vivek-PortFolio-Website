@@ -4,34 +4,62 @@
   flex-direction: column;
 }
 
-.user-heading{
+.user-heading {
   width: 90%;
   margin: auto;
-  padding: 20px ;
+  padding: 20px;
   padding-bottom: 50px;
   text-transform: uppercase;
   text-shadow: 1px 1px 2px black;
   font-family: "Times New Roman", Times, serif;
+  @media screen and (max-width: 1200px) {
+    margin-top: 50px;
+    margin: 0;
+  }
+ 
+
 }
 
 .app_User-container {
   width: 80%;
   margin-top: 3rem;
-  gap:  2rem;
+  gap: 2rem;
   display: flex;
   flex-direction: row;
   margin: auto;
-  
 
-  
+  @media screen and (max-width: 1200px) {
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 70%;
+    margin-bottom: 40px;
+  }
+  @media screen and (max-width: 600px) {
+    width: 95%;
+    
+  }
 }
 
-
-
-
-.box{
+.box {
   border: 2px solid black;
   border-radius: 20px;
   padding: 15px;
   width: 100%;
+}
+
+.User_heading {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  
+  font-weight: 900;
+  font-size: 1.5rem;
+  font-family: "Times New Roman", Times, serif;
+  @media screen and (max-width: 700px) {
+    font-size: 1rem;
+  }
+  @media screen and (max-width: 565px) {
+    font-size: 1rem;
+  }
 }
