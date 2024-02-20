@@ -1,6 +1,8 @@
 .app_User {
   flex: 1;
   width: 100%;
+  // flex: start;
+  justify-content: start;
   flex-direction: column;
 }
 
@@ -16,8 +18,6 @@
     margin-top: 50px;
     margin: 0;
   }
- 
-
 }
 
 .app_User-container {
@@ -25,6 +25,7 @@
   margin-top: 3rem;
   gap: 2rem;
   display: flex;
+  
   flex-direction: row;
   margin: auto;
 
@@ -36,7 +37,6 @@
   }
   @media screen and (max-width: 600px) {
     width: 95%;
-    
   }
 }
 
@@ -44,7 +44,8 @@
   border: 2px solid black;
   border-radius: 20px;
   padding: 15px;
-  width: 100%;
+  
+  width: 700px;
 }
 
 .User_heading {
@@ -52,7 +53,7 @@
   margin: auto;
   display: flex;
   align-items: center;
-  
+
   font-weight: 900;
   font-size: 1.5rem;
   font-family: "Times New Roman", Times, serif;
@@ -62,4 +63,120 @@
   @media screen and (max-width: 565px) {
     font-size: 1rem;
   }
+}
+
+.solved {
+  display: flex;
+  justify-content: right;
+  flex-wrap: wrap;
+  padding-right: 30px;
+  font-size: larger;
+}
+
+.stat_container {
+  color: white;
+  position: relative;
+  display: flex;
+  // width: 60%;
+  flex-direction: row;
+
+  .box1 {
+    position: relative;
+    padding: 40px 0;
+    width: 40%;
+    height: 200px;
+
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .circle {
+      position: absolute;
+      width: 120px;
+      height: 120px;
+      background: conic-gradient(
+        from 0deg,
+        var(--clr) 0%,
+        var(--clr) 0% var(--i),
+        #333 var(--i),
+        #333 100%
+      );
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      h2 {
+        position: relative;
+        text-align: center;
+        font-size: 2.5rem;
+        color: white;
+        font-weight: 600;
+
+        small {
+          font-size: 1.5rem;
+          font-weight: 600;
+        }
+      }
+    }
+    .circle::before {
+      content: "";
+      position: absolute;
+      inset: 7px;
+      border-radius: 100%;
+      background-color: black;
+    }
+  }
+}
+
+
+.linear_box {
+
+  // border: ;
+  padding: 10px;
+  display: flex;
+  width: 55%;
+  color: black;
+  flex-direction: column;
+  justify-content: center;
+  
+
+  .line{
+    background-color: bisque;
+    width: full;
+    border-radius: 10px;
+    height: 8px;
+    margin-bottom: 24px;
+    
+
+    .linear_progress{
+      background-color: rgb(116, 194, 92); 
+      color: white; 
+      padding: 1%; 
+      height: 8px;
+      text-align: right; 
+      font-size: 20px; 
+      border-radius: 15px; 
+      
+    }
+  
+  }
+
+}
+
+.box2{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  padding: 30px 10px;
+}
+
+.ranking{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 25px;
+
 }

@@ -6,7 +6,7 @@ import MotionWrap from '../../wrapper/MotionWrap';
 import "./User.scss"
 
 function User() {
-  // const val = 19;
+  const val = 19;
   return (
     <>
       <div>
@@ -22,24 +22,79 @@ function User() {
               <div>LeetCode:</div>
               <h2>Vivek_Kumar2909</h2>
             </div>
-            When you add an image to a page using the HTML  element, the image will maintain the size and aspect ratio of the image file, or that of any HTML width or height attributes. Sometimes you would like the image to completely fill the box that you have placed it in. In that case you first need to decide what happens if the image is the wrong aspect ratio for the container.
+            <div className='solved'>
+              Solved
+            </div>
 
-            The image should completely fill the box, retaining aspect ratio, and cropping any excess on the side that is too big to fit.
-            The image should fit inside the box, with the background showing through as bars on the too-small side.
-            The image should fill the box and stretch, which may mean it displays at the wrong aspect ratio.
-            The object-fit property makes each of these approaches possible. In the example below you can see how different values of object-fit work when using the same image. Select the approach that works best for your design.
+            <div className='stat_container'>
+              <div className="box1" style={{ "--i": `${val}%`, "--clr": "#fd0a54" }}>
+                <div className="circle">
+                  <h2>19 <small>%</small></h2>
+                </div>
+              </div>
+              <div className="linear_box">
+                <div className="gap_box">
+                  <div className="questions">Easy: 250/900</div>
+                  <div className="line">
+                    <div className="linear_progress" style={{ width: `${val}%` }}>
+                    </div>
+                  </div>
+                  <div className="questions">Easy: 250/900</div>
+                  <div className="line">
+                    <div className="linear_progress" style={{ width: `${val}%` }}>
+                    </div>
+                  </div>
+                  <div className="questions">Easy: 250/900</div>
+                  <div className="line">
+                    <div className="linear_progress" style={{ width: `${val}%` }}>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <div className='box'>
             <div className='User_heading'>
               <div>LeetCode:</div>
               <h2>Vivek_Kumar2909</h2>
             </div>
-            When you add an image to a page using the HTML  element, the image will maintain the size and aspect ratio of the image file, or that of any HTML width or height attributes. Sometimes you would like the image to completely fill the box that you have placed it in. In that case you first need to decide what happens if the image is the wrong aspect ratio for the container.
 
-            The image should completely fill the box, retaining aspect ratio, and cropping any excess on the side that is too big to fit.
-            The image should fit inside the box, with the background showing through as bars on the too-small side.
-            The image should fill the box and stretch, which may mean it displays at the wrong aspect ratio.
-            The object-fit property makes each of these approaches possible. In the example below you can see how different values of object-fit work when using the same image. Select the approach that works best for your design.
+            <div className='box2'>
+              <div className='ranking'>
+                <div>
+                  Ranked
+                </div>
+                <div>
+                  Ranked
+                </div>
+              </div>
+              <div className='ranking'>
+                <div>
+                  Ranked
+                </div>
+                <div>
+                  Ranked
+                </div>
+              </div>
+              <div className='ranking'>
+                <div>
+                  Ranked
+                </div>
+                <div>
+                  Ranked
+                </div>
+              </div>
+              <div className='ranking'>
+                <div>
+                  Ranked
+                </div>
+                <div>
+                  Ranked
+                </div>
+              </div>
+            </div>
+
+
           </div>
 
         </div>
