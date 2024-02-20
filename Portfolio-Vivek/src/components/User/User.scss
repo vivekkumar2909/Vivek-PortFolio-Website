@@ -32,7 +32,7 @@
   @media screen and (max-width: 1200px) {
     flex-direction: column;
     flex-wrap: wrap;
-    width: 70%;
+    width: 100%;
     margin-bottom: 40px;
   }
   @media screen and (max-width: 600px) {
@@ -44,8 +44,32 @@
   border: 2px solid black;
   border-radius: 20px;
   padding: 15px;
-  
   width: 700px;
+
+  @media screen and (max-width: 900px) {
+    width: 500px;
+
+  }
+  @media screen and (max-width: 700px) {
+    width: 400px;
+    // display: flex;
+    // flex-wrap: wrap;
+
+  }
+  
+  @media screen and (max-width: 600px) {
+    width: 350px;
+  }
+  @media screen and (max-width: 400px) {
+    width: 300px;
+  }
+  @media screen and (max-width: 350px) {
+    padding: 5px;
+    width: 280px;
+  }
+  @media screen and (max-width: 300px) {
+    width: 250px;
+  }
 }
 
 .User_heading {
