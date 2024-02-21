@@ -1,12 +1,24 @@
 /* eslint-disable react-refresh/only-export-components */
 
+import { useEffect } from 'react';
 import AppWrap from '../../wrapper/AppWrap';
 import MotionWrap from '../../wrapper/MotionWrap';
+import axios from 'axios'
 
 import "./User.scss"
 
 function User() {
   const val = 19;
+
+
+  useEffect( ()=>{
+      axios.get('https://leetcode-stats-api.herokuapp.com/vivek_kumar2909/').then((result) => {
+        console.log(result);
+      }).catch((err) => {
+        console.log(err);
+      });
+  },[]);
+
   return (
     <>
       <div>
@@ -27,7 +39,7 @@ function User() {
             </div>
 
             <div className='stat_container'>
-              <div className="box1" style={{ "--i": `${val}%`, "--clr": "#fd0a54" }}>
+              <div className="box1" style={{ "--i": `${val}%`, "--clr": "#ffc01e"}}>
                 <div className="circle">
                   <h2>19 <small>%</small></h2>
                 </div>
@@ -40,13 +52,13 @@ function User() {
                     </div>
                   </div>
                   <div className="questions">Easy: 250/900</div>
-                  <div className="line">
-                    <div className="linear_progress" style={{ width: `${val}%` }}>
+                  <div className="line1">
+                    <div className="linear_progress1" style={{ width: `${val}%` }}>
                     </div>
                   </div>
                   <div className="questions">Easy: 250/900</div>
-                  <div className="line">
-                    <div className="linear_progress" style={{ width: `${val}%` }}>
+                  <div className="line2">
+                    <div className="linear_progress2" style={{ width: `${val}%` }}>
                     </div>
                   </div>
                 </div>
