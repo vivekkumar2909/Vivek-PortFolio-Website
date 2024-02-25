@@ -1,4 +1,4 @@
-import  { useState } from 'react';
+import { useState } from 'react';
 import { HiMenuAlt4, HiX } from 'react-icons/hi';
 import { motion } from 'framer-motion';
 
@@ -13,22 +13,27 @@ const Navbar = () => {
   return (
     <nav className="app__navbar">
       <div className="app__navbar-logo">
-        <img src={logo} alt="logo" width={100} height={100}/>
-        
+        <img src={logo} alt="logo" width={100} height={100} />
+
       </div>
       <h2>Vivek Kumar</h2>
       <ul className="app__navbar-links">
-        {['home', 'about', 'work', 'skills','coding','contact'].map((item) => (
+        {['home', 'about', 'work', 'skills', 'coding', 'contact'].map((item) => (
           <li className="app__flex p-text" key={`link-${item}`}>
             <div />
             <a href={`#${item}`}>{item}</a>
           </li>
         ))}
       </ul>
-
-      <div className='Resume'>
-        My Resume
-      </div>
+      <a  href='google.com'>
+        <motion.div className='Resume'
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.8 }}
+          transition={{ delay: .1 }}
+        >
+          My Resume
+        </motion.div>
+      </a>
 
       <div className="app__navbar-menu">
         <HiMenuAlt4 onClick={() => setToggle(true)} />
