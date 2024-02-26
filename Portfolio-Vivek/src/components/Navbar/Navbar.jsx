@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 import logo from '../../assets/favicon.ico'
 
-// import { images } from '../../constants';
+
 import './Navbar.scss';
 
 const Navbar = () => {
@@ -28,10 +28,10 @@ const Navbar = () => {
       <a  href='google.com'>
         <motion.div className='Resume'
           whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.8 }}
+          // whileTap={{ scale: 0.8 }}
           transition={{ delay: .1 }}
         >
-          My Resume
+          <motion.p  whileTap={{ scale: 0.8 }} >My Resume</motion.p>
         </motion.div>
       </a>
 
