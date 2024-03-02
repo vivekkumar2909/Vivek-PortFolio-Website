@@ -31,7 +31,7 @@ const Navbar = () => {
           // whileTap={{ scale: 0.8 }}
           transition={{ delay: .1 }}
         >
-          <motion.p  whileTap={{ scale: 0.8 }} >My Resume</motion.p>
+          <motion.p  whileTap={{ scale: 0.8 }} transition={{ delay: .1 }} >My Resume</motion.p>
         </motion.div>
       </a>
 

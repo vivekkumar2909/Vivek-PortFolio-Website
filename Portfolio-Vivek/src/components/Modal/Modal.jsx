@@ -1,9 +1,15 @@
 import './Modal.scss';
 import Aisass from '../../assets/Ai-sass.png';
+import React from 'react';
+// import {Link} from 'react-router-dom'
+import {motion , AnimatePresence} from 'framer-motion'
+
+import { CgCloseO } from "react-icons/cg";
 
 export default function Modal() {
     return (
-        <div>
+        <AnimatePresence >
+        
             <div className='modal'>
                 <div className='Heading'>
                     <h1 >
@@ -33,6 +39,6 @@ export default function Modal() {
                 </div>
 
             </div>
-        </div>
+        </AnimatePresence>
     )
 }
