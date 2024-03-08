@@ -25,13 +25,13 @@ const Navbar = () => {
           </li>
         ))}
       </ul>
-      <a  href='google.com'>
+      <a href='https://drive.google.com/file/d/1gZHIyQhOBEaqt5Rj4JQ69VGm5i9ptYDg/view?usp=sharing' target="_blank" rel="noreferrer">
         <motion.div className='Resume'
           whileHover={{ scale: 1.1 }}
           // whileTap={{ scale: 0.8 }}
           transition={{ delay: .1 }}
         >
-          <motion.p  whileTap={{ scale: 0.8 }} transition={{ delay: .1 }} >My Resume</motion.p>
+          <motion.p whileTap={{ scale: 0.8 }} transition={{ delay: .1 }} >My Resume</motion.p>
         </motion.div>
       </a>
 

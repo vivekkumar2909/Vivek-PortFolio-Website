@@ -50,7 +50,7 @@ const Work = () => {
       <h2 className="head-text">My Creative <span>Portfolio</span> Section</h2>
 
       <div className="app__work-filter">
-        {['UI/UX', 'Web App', 'Next JS', 'React JS', 'All'].map((item, index) => (
+        {['Backend','UI/UX', 'Web App', 'Next JS', 'React JS', 'All'].map((item, index) => (
           <div
             key={index + 1}
             onClick={() => handleWorkFilter(item)}
@@ -115,7 +115,7 @@ const Work = () => {
       </motion.div>
 
       {showModal && <>
-        <Modal/>
+        <Modal setShowModal ={setShowModal}/>
       </>}
     </>
   );

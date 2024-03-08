@@ -1,22 +1,36 @@
+/* eslint-disable react/prop-types */
 import './Modal.scss';
 import Aisass from '../../assets/Ai-sass.png';
 // import React from 'react';
 // import {Link} from 'react-router-dom'
-import { motion, AnimatePresence } from 'framer-motion'
+import { AnimatePresence } from 'framer-motion'
 
-// import { CgCloseO } from "react-icons/cg";
+import { CgCloseO } from "react-icons/cg";
+import { useEffect } from 'react';
 
-export default function Modal() {
+export default function Modal({setShowModal}) {
 
     const handleChangeImg = function(e){
         console.log( "Event",e.target);
     }
 
-    return (
-        <AnimatePresence >
+    // const [showModal,setShowModel] = useState();
 
-            <div className='modal'>
+    useEffect(()=>{
+        document.body.style.overflow = "hidden";
+        return () => {
+            document.body.style.overflow = "auto";
+        }
+    },[])
+
+    return (
+        <div className='modal' >
+            <div className='scroll_model'>
+            <div className='cross1'>
+                    <CgCloseO className='cross' onClick={() => {setShowModal(false)} }/>
+            </div>
                 <div className='Heading'>
+                
                     <h1 >
                         Ai-SAAS
                     </h1>
@@ -97,6 +111,6 @@ export default function Modal() {
                 </div>
 
             </div>
-        </AnimatePresence>
+        </div>
     )
 }

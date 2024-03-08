@@ -28,11 +28,14 @@ const About = () => {
       </div>
 
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
-        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
-        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      As a BTech Computer Engineering graduate, I bring a robust skill set in cutting-edge technologies and 
+      problem-solving capabilities to the table. Proficient in Next.js and React, I've developed dynamic and 
+      responsive user interfaces that enhance user experiences. My expertise extends to MongoDB and PrismaDB, 
+      enabling me to architect efficient and scalable backend systems. With a solid foundation in C++, I excel 
+      in backend development, crafting robust and optimized solutions. I have honed my problem-solving skills through 
+      extensive practice on platforms like LeetCode, where I tackle complex algorithmic challenges with precision and 
+      creativity. My diverse skill set and dedication to excellence make me a valuable asset to any team aiming to innovate 
+      and thrive in the rapidly evolving landscape of technology.
       </p>
 
       </div>
